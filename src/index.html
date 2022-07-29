@@ -268,13 +268,14 @@
 
           <div class="grid grid--mobile">
             <div class="grid__item grid__item--1-5">
-              <form>
+              <form action="." class="form">
                 <input
                   type="text"
                   name="name"
                   id="name"
                   placeholder="Name"
                   class="contact__field form-field"
+                  required
                 >
                 <input
                   type="email"
@@ -282,6 +283,7 @@
                   id="email"
                   placeholder="Email"
                   class="contact__field form-field"
+                  required
                 >
                 <textarea
                   name="area"
@@ -289,10 +291,11 @@
                   class="contact__field form-field form-field--textarea"
                   placeholder="Message"
                 ></textarea>
-              </form>
-              <a href="#" class="button">
+                <button type="submit" class="button">
                 Send
-              </a>
+                </button>
+              </form>
+
             </div>
             <div class="grid__item grid__item--8-10">
               <div class="contact__info">
@@ -305,7 +308,8 @@
               </div>
               <div class="contact__info">
                 <div class="contact__info-tittle">Address</div>
-                <a href="https://goo.gl/maps/LkeAPtQjPubcFVJc8" class="contact__info-link">400 first ave. <br> suite  700 <br> Minneapolis, MN 55401</a>
+                <a href="https://goo.gl/maps/LkeAPtQjPubcFVJc8" class="contact__info-link"
+                target="_blank">400 first ave. <br> suite  700 <br> Minneapolis, MN 55401</a>
               </div>
             </div>
           </div>

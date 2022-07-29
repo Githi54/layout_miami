@@ -8,11 +8,10 @@
       content: "";
       display: block;
       padding-bottom: 100%;
-    }
-
-    @include onDesktop {
-      height: 320px;
-      padding-bottom: 0;
+      @include onDesktop {
+        height: 320px;
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -24,6 +23,12 @@
 
     object-fit: cover;
     object-position: center;
+
+    transition: transform 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__tittle {
